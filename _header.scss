@@ -1,0 +1,266 @@
+header {
+
+    // --- Variables ---
+    $cyber-green: #0dff00;
+
+    // --- Reset & Global Body ---
+    body {
+        background: #000000;
+        color: $cyber-green;
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    // --- Header & Navigation Layout ---
+    header {
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+
+            .logo {
+                img {
+                    width: 90px;
+                }
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    margin: 15px;
+
+                    a {
+                        color: $cyber-green;
+                        text-decoration: none;
+                        transition: 150ms;
+
+                        &:hover {
+                            color: #0dff006c;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Centered Description Text
+        .middleword {
+            text-align: center;
+            margin: 150px auto 0 auto;
+            max-width: 700px;
+            width: 90%;
+        }
+    }
+
+    // --- Hacker Style Password Generator Container ---
+    .generator-container {
+        max-width: 550px;
+        width: 90%;
+        margin: 60px auto;
+        font-family: monospace;
+
+        // Main Terminal Box Profile
+        border: 2px solid $cyber-green;
+        background-color: #000000;
+        padding: 25px;
+        box-shadow: 0 0 15px rgba(13, 255, 0, 0.15);
+
+        // Forces absolute square corners on everything inside
+        *,
+        *::before,
+        *::after {
+            border-radius: 0 !important;
+        }
+
+        // Top Password Display Bar
+        .display-box {
+            display: flex;
+            border: 1px solid $cyber-green;
+            margin-bottom: 20px;
+
+            input {
+                flex: 1;
+                background: transparent;
+                border: none;
+                color: $cyber-green;
+                padding: 12px;
+                font-size: 1.2rem;
+                font-family: monospace;
+                outline: none;
+            }
+
+            button {
+                background: $cyber-green;
+                color: #000000;
+                border: none;
+                padding: 0 20px;
+                font-weight: bold;
+                cursor: pointer;
+                font-family: monospace;
+                transition: all 0.15s ease-in-out;
+
+                &:hover {
+                    background: #000000;
+                    color: $cyber-green;
+                    outline: 1px solid $cyber-green;
+                }
+            }
+        }
+
+        // Configuration Settings Controls
+        .controls-box {
+            .setting {
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                label {
+                    color: $cyber-green;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                // Custom Range Slider Configuration (With Linter Fixes!)
+                input[type="range"] {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 100%;
+                    background: #111;
+                    border: 1px solid $cyber-green;
+                    height: 8px;
+                    outline: none;
+
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        width: 15px;
+                        height: 20px;
+                        background: $cyber-green;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            // 2x2 Grid Layout for Checkboxes
+            .checkbox-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                margin-bottom: 25px;
+            }
+
+            // Terminal Style Checkbox Blocks
+            .hacker-checkbox {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                color: $cyber-green;
+                user-select: none;
+
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+
+                    &:checked~.custom-box::after {
+                        display: block;
+                    }
+                }
+
+                .custom-box {
+                    height: 16px;
+                    width: 16px;
+                    border: 1px solid $cyber-green;
+                    display: inline-block;
+                    margin-right: 10px;
+                    position: relative;
+
+                    &::after {
+                        content: "X"; // Minimalist terminal check mark
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: $cyber-green;
+                        display: none;
+                    }
+                }
+            }
+
+            // Primary Action Button
+            #generate-btn {
+                width: 100%;
+                background: transparent;
+                color: $cyber-green;
+                border: 1px solid $cyber-green;
+                padding: 14px;
+                font-family: monospace;
+                font-size: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    background: $cyber-green;
+                    color: #000;
+                    box-shadow: 0 0 10px rgba(13, 255, 0, 0.4);
+                }
+            }
+        }
+    }
+
+    .middleword {
+        text-align: center;
+        margin: 150px auto 0 auto;
+        max-width: 700px;
+        width: 90%;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            img {
+                width: 90px;
+            }
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin: 15px;
+
+
+
+                a {
+                    color: #0dff00;
+                    text-decoration: none;
+                    transition: 150ms;
+
+                    &:hover {
+                        color: #0dff006c;
+                    }
+                }
+            }
+        }
+    }
+
+}

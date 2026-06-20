@@ -1,0 +1,228 @@
+body {
+  background: #000000;
+  color: #0dff00;
+  font-family: monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .your-main-container-class {
+    width: 90%;
+    padding: 15px;
+  }
+  h1, .your-title-class {
+    font-size: 1.8rem;
+  }
+  .your-flex-container {
+    flex-direction: column;
+  }
+}
+header body {
+  background: #000000;
+  color: #0dff00;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+header * {
+  box-sizing: border-box;
+}
+header header nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+header header nav .logo img {
+  width: 90px;
+}
+header header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header header nav ul li {
+  margin: 15px;
+}
+header header nav ul li a {
+  color: #0dff00;
+  text-decoration: none;
+  transition: 150ms;
+}
+header header nav ul li a:hover {
+  color: rgba(13, 255, 0, 0.4235294118);
+}
+header header .middleword {
+  text-align: center;
+  margin: 150px auto 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+header .generator-container {
+  max-width: 550px;
+  width: 90%;
+  margin: 60px auto;
+  font-family: monospace;
+  border: 2px solid #0dff00;
+  background-color: #000000;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(13, 255, 0, 0.15);
+}
+header .generator-container *,
+header .generator-container *::before,
+header .generator-container *::after {
+  border-radius: 0 !important;
+}
+header .generator-container .display-box {
+  display: flex;
+  border: 1px solid #0dff00;
+  margin-bottom: 20px;
+}
+header .generator-container .display-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #0dff00;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-family: monospace;
+  outline: none;
+}
+header .generator-container .display-box button {
+  background: #0dff00;
+  color: #000000;
+  border: none;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: monospace;
+  transition: all 0.15s ease-in-out;
+}
+header .generator-container .display-box button:hover {
+  background: #000000;
+  color: #0dff00;
+  outline: 1px solid #0dff00;
+}
+header .generator-container .controls-box .setting {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+header .generator-container .controls-box .setting label {
+  color: #0dff00;
+  display: flex;
+  justify-content: space-between;
+}
+header .generator-container .controls-box .setting input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  background: #111;
+  border: 1px solid #0dff00;
+  height: 8px;
+  outline: none;
+}
+header .generator-container .controls-box .setting input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 20px;
+  background: #0dff00;
+  cursor: pointer;
+}
+header .generator-container .controls-box .checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+header .generator-container .controls-box .hacker-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #0dff00;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+header .generator-container .controls-box .hacker-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+header .generator-container .controls-box .hacker-checkbox input:checked ~ .custom-box::after {
+  display: block;
+}
+header .generator-container .controls-box .hacker-checkbox .custom-box {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #0dff00;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+header .generator-container .controls-box .hacker-checkbox .custom-box::after {
+  content: "X";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #0dff00;
+  display: none;
+}
+header .generator-container .controls-box #generate-btn {
+  width: 100%;
+  background: transparent;
+  color: #0dff00;
+  border: 1px solid #0dff00;
+  padding: 14px;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+header .generator-container .controls-box #generate-btn:hover {
+  background: #0dff00;
+  color: #000;
+  box-shadow: 0 0 10px rgba(13, 255, 0, 0.4);
+}
+header .middleword {
+  text-align: center;
+  margin: 150px auto 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav .logo img {
+  width: 90px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  margin: 15px;
+}
+header nav ul li a {
+  color: #0dff00;
+  text-decoration: none;
+  transition: 150ms;
+}
+header nav ul li a:hover {
+  color: rgba(13, 255, 0, 0.4235294118);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+body{
+    background: #000000;
+    color: #0dff00;
+    font-family: monospace;
+}
+
+*{
+    box-sizing: border-box
+}
+
+
+@media (max-width: 768px) {
+    .your-main-container-class {
+        width: 90%; // Takes up 90% of the phone screen instead of a fixed pixel width
+        padding: 15px; // Shrinks padding so it fits nicely
+    }
+
+    h1, .your-title-class {
+        font-size: 1.8rem; // Makes big titles slightly smaller on mobile
+    }
+    
+    // If your layout elements are side-by-side, stack them vertically
+    .your-flex-container {
+        flex-direction: column;
+    }
+}
+
+@import "./header";

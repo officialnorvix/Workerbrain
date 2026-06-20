@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workerbrain Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="WLOGO.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Wlogo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="https://www.instagram.com/officialnorvix?igsh=MXYzZDA3bG9neG1udw==">Social media</a></li>
+               <li><a href="mailto:officialnorvix@gmail.com">Report</a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="middleword">
+            WARNING:Your passwords are not gonna be saved and never will be
+        </div>
+        <div class="generator-container">
+            <div class="display-box">
+                <input type="text" id="password-display" readonly value="P@ssw0rd123!">
+                <button id="copy-btn">COPY</button>
+            </div>
+
+            <div class="controls-box">
+                <div class="setting">
+                    <label>Length: <span id="length-val">16</span></label>
+                    <input type="range" id="length-slider" min="8" max="64" value="16">
+                </div>
+
+                <div class="checkbox-grid">
+                    <label class="hacker-checkbox">
+                        <input type="checkbox" id="uppercase" checked>
+                        <span class="custom-box"></span> UPPERCASE
+                    </label>
+                    <label class="hacker-checkbox">
+                        <input type="checkbox" id="lowercase" checked>
+                        <span class="custom-box"></span> lowercase
+                    </label>
+                    <label class="hacker-checkbox">
+                        <input type="checkbox" id="numbers" checked>
+                        <span class="custom-box"></span> 0-9 numbers
+                    </label>
+                    <label class="hacker-checkbox">
+                        <input type="checkbox" id="symbols" checked>
+                        <span class="custom-box"></span> !@# symbols
+                    </label>
+                </div>
+
+                <button id="generate-btn">GENERATE SECURE KEY</button>
+            </div>
+    </header>
+
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</body>
+
+</html>
