@@ -10,18 +10,9 @@ body{
 
 
 @media (max-width: 768px) {
-    .your-main-container-class {
+    .generator-container {
         width: 90%; 
         padding: 15px; 
-    }
-
-    h1, .your-title-class {
-        font-size: 1.8rem; 
-    }
-
-    // This forces your side-by-side elements to stack vertically if needed
-    .your-flex-container {
-        flex-direction: column;
     }
 
     // FIX FOR THE COPY BUTTON:
@@ -30,10 +21,15 @@ body{
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        border: 1px solid #00dff0; /* Matches your hacker border style */
+        padding: 5px;
         
         input {
             width: 100%; /* Allows the input box to shrink dynamically on small screens */
             min-width: 0; /* Prevents the input from pushing the button out of the box */
+            background: transparent;
+            border: none;
+            outline: none;
         }
 
         button {
