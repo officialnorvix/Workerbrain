@@ -11,17 +11,34 @@ body{
 
 @media (max-width: 768px) {
     .your-main-container-class {
-        width: 90%; // Takes up 90% of the phone screen instead of a fixed pixel width
-        padding: 15px; // Shrinks padding so it fits nicely
+        width: 90%; 
+        padding: 15px; 
     }
 
     h1, .your-title-class {
-        font-size: 1.8rem; // Makes big titles slightly smaller on mobile
+        font-size: 1.8rem; 
     }
-    
-    // If your layout elements are side-by-side, stack them vertically
+
+    // This forces your side-by-side elements to stack vertically if needed
     .your-flex-container {
         flex-direction: column;
+    }
+
+    // FIX FOR THE COPY BUTTON:
+    .display-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        input {
+            width: 100%; /* Allows the input box to shrink dynamically on small screens */
+            min-width: 0; /* Prevents the input from pushing the button out of the box */
+        }
+
+        button {
+            flex-shrink: 0; /* Keeps your COPY button perfectly sized so it doesn't deform */
+        }
     }
 }
 
