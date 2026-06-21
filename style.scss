@@ -11,8 +11,10 @@ body{
 
 @media (max-width: 768px) {
     .generator-container {
-        width: 90%; 
-        padding: 15px; 
+        width: 85%;            /* Drops the width from 90% to 85% to make it sleeker */
+        max-width: 340px;      /* Prevents it from getting too big on larger phones */
+        padding: 12px;         /* Compacts the spacing inside the box */
+        margin: 0 auto;        /* Centers it perfectly on the screen */
     }
 
     // FIX FOR THE COPY BUTTON:
@@ -21,19 +23,21 @@ body{
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        border: 1px solid #00dff0; /* Matches your hacker border style */
+        border: 1px solid #00dff0; 
         padding: 5px;
         
         input {
-            width: 100%; /* Allows the input box to shrink dynamically on small screens */
-            min-width: 0; /* Prevents the input from pushing the button out of the box */
+            width: 100%; 
+            min-width: 0; 
             background: transparent;
             border: none;
             outline: none;
+            font-size: 1.1rem; /* Slightly smaller text so long passwords fit better */
         }
 
         button {
-            flex-shrink: 0; /* Keeps your COPY button perfectly sized so it doesn't deform */
+            flex-shrink: 0; 
+            padding: 5px 10px; /* Makes the button padding a bit more compact */
         }
     }
 }
